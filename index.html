@@ -9,6 +9,7 @@
 
     <!---stylesheet-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
 
     <!---google font link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +23,7 @@
 </head>
 <body>
 
-<!-------- header ------>
+<!-------- cabeçalho ------>
 
 <div class="header">
   <div class="container">
@@ -34,9 +35,9 @@
           <nav >
               <ul id="MenuItems">
                   <li><a href="index.html">Página Inicial</a></li>
-                  <li><a href="produtos.html">Jogos</a></li>
-                  <li><a href="contato.html">Download</a></li>
-                  <li><a href="account.html">Conta</a></li>
+                  <li><a href="jogos.html">Jogos</a></li>
+                  <li><a href="Download.html">Download</a></li>
+                  <li><a href="conta.html">Conta</a></li>
               </ul>
           </nav>
 
@@ -65,7 +66,7 @@
 </div>
 
 
-<!-------------------- featured products -------------------->            
+<!-------------------- seção de jogos -------------------->            
  
                 <div class="small-container">
                     <h2 class="title">Jogos Disponíveis</h2>
@@ -96,22 +97,32 @@
                     </div>
 
                    
-        <!-------offer ------->
+        <!------- sugestão ------->
             <div class="offer">
                 <div class="small-container">
                     <div class="row">
                         <div class="col-2">
-
-                           <img src="images/controle.png" class="offer-img">
+                            
+                           <img src="images/duvida.png" class="offer-img">
                         </div>
                         <div class="col-2">
-                             <p>Deixe aqui sua sugestão</p>
-                             <h1> Qual jogo podemos adicionar ?</h1>
-                             <small>
-                                Clique no botão abaixo e mande a uma mensagem para nós, com o nome do jogo e nome
-                                 que iremos avaliar a disponibilidade do jogo para ser adicionado ao site. <br>
-                             </small>
-                             <a href="contato.html" class="btn">Enviar mensagem &#8594;</a>
+                            <form class="formss">
+                                <h2>Deixe aqui sua sugestão</h2>
+                                <label for="email">Nome</label>
+                                <input type="text" id="nome" name="nome" required placeholder="Escreva seu nome"><br>
+                              
+                                <label for="email">Email</label>
+                                <input type="text" id="sobrenome" name="sobrenome" required placeholder="Escreva seu ultimo sobrenome"><br>
+                              
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="Coloque seu melhor email" ><br>
+                              
+                                
+                                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required placeholder="Nos deixe uma mensagem"></textarea><br><br>
+                              
+                                <input type="submit" value="Enviar">
+                              </form>
+                              
                         </div>
                     </div>
                 </div>
@@ -143,7 +154,7 @@
                         <h3>Menu</h3>
                         <ul>
                            <li><a href="index.html">Página Inicial </a></li> 
-                            <li> <a href="produtos.html">Jogos</a></li>
+                            <li> <a href="jogos.html">Jogos</a></li>
                             <li><a href="contato.html">Download</a></li>
                             <li><a href="account.html">Conta</a></li>
                         </ul>

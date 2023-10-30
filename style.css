@@ -71,7 +71,7 @@ p{
 }
 .btn{
     display: inline-block;
-    background: #b300ff;
+    background: #070708;
     color: #fff;
     padding: 8px 30px;
     margin: 30px 0;
@@ -79,10 +79,10 @@ p{
     transition: all 0.5s;
 }
 .btn:hover{
-    background: #563434;
+    background: #253bcb;
 }
 .header{
-    background:	#5f0000;
+    background:	#ba4444;
 }
 .header .row{
     margin-top: 70px;
@@ -160,7 +160,7 @@ p{
 }
 /*-------offer ---------*/
 .offer{
-    background: #4c00ff;
+    background: #4144f1;
     margin-top: 80px;
     padding: 30px 0;
     border-radius: 100px;
